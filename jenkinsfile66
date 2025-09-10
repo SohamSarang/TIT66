@@ -9,12 +9,12 @@ pipeline {
         }
          stage('compile') {
             steps {
-                echo 'Good Morning'
+                echo 'javac Helloworld.java'
             }
         }
            stage('run') {
             steps {
-                echo 'Good Night'
+                echo 'java Helloworld'
             }
         }
     }
