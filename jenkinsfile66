@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                echo 'Hello World'
+                git branch: 'main', credentialsId: '21ab8f43-f6b1-4d3a-b0c4-16fc14ab899e', url: 'https://github.com/SohamSarang/TIT66.git'
             }
         }
          stage('compile') {
